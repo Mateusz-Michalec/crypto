@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Nunito:wght@400;600;700&display=swap");
+@import "./assets/variables.scss";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+#root {
+  display: grid;
+  min-height: 100vh;
+  font-family: "Nunito", sans-serif;
+  background: $backgroud;
+}
+
+footer {
+  background: $dark-blue;
+}
+
+@media screen and (min-width: 992px) {
+  #root {
+    grid-template-columns: 250px auto;
+  }
+
+  main {
+    grid-column-start: 2;
+  }
+
+  footer {
+    grid-column: span 2;
+    grid-column-start: 2;
+  }
+}
+
+a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+.brand {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.hover-shadow:hover {
+  box-shadow: $box-shadow;
+}
+
+.hover-color:hover {
+  background: $blue;
+  color: white;
+
+  span,
+  i {
+    color: white;
+  }
+}
+
+// Bootstrap
+
+.card {
+  transition: all 0.3s ease-in-out;
+  box-shadow: $box-shadow-sm;
+
+  &-header,
+  &-footer {
+    background: none !important;
+    border: none !important;
+  }
+}
+
+// Loader
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 auto;
+  padding: 1px;
+  background: conic-gradient(#0000 10%, $dark-blue) content-box;
+  -webkit-mask: repeating-conic-gradient(
+      #0000 0deg,
+      #000 1deg 20deg,
+      #0000 21deg 36deg
+    ),
+    radial-gradient(
+      farthest-side,
+      #0000 calc(100% - 9px),
+      #000 calc(100% - 8px)
+    );
+  -webkit-mask-composite: destination-in;
+  mask-composite: intersect;
+  animation: s4 1s infinite steps(10);
+}
+@keyframes s4 {
+  to {
+    transform: rotate(1turn);
+  }
+}
