@@ -13,7 +13,7 @@ export default function Footer() {
         <Stack
           direction="horizontal"
           className="justify-content-center mt-3"
-          gap={5}
+          gap={4}
         >
           <Link to="/"> Home</Link>
           <Link to="/cryptocurrencies"> Kryptowaluty</Link>
