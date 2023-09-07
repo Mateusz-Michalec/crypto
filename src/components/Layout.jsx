@@ -8,7 +8,7 @@ export default function Layout() {
   return (
     <>
       <Navbar />
-      <main className="py-4 py-lg-5 px-4 px-lg-5 ">
+      <main className="py-4 py-lg-5">
         <Container>
           <Outlet />
         </Container>

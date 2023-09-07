@@ -30,6 +30,7 @@ export default function Cryptocurrencies({ simplified }) {
           value={searchTerm}
         />
       ) : null}
+
       <Row className="g-5">
         {cryptos?.map((crypto) => {
           const isPlus = millify(crypto.change) >= 0;
