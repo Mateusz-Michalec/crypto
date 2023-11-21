@@ -18,7 +18,7 @@ export default function Footer() {
           <Link to="/"> Home</Link>
           <Link to="/cryptocurrencies"> Kryptowaluty</Link>
           <Link to="/currencies"> Waluty</Link>
-          <Link to="/news"> Newsy</Link>
+          {/* <Link to="/news"> Newsy</Link> */}
         </Stack>
       </Container>
     </footer>
