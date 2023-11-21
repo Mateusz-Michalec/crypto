@@ -18,7 +18,8 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/cryptocurrencies" element={<Cryptocurrencies />} />
           <Route path="/crypto/:coinId" element={<CryptoDetails />} />
-          <Route path="/news" element={<News />} />
+          {/* Rapid Api 404 Issue */}
+          {/* <Route path="/news" element={<News />} /> */}
         </Route>
       </Routes>
     </Suspense>

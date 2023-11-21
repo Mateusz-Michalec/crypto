@@ -67,11 +67,12 @@ export default function Home() {
         content={<Cryptocurrencies simplified={true} />}
       />
 
-      <HomeSection
+      {/* Rapid Api 404 Issue */}
+      {/* <HomeSection
         title="Najnowsze wiadomości - kryptowaluty"
         path="/news"
         content={<News simplified={true} />}
-      />
+      /> */}
     </>
   );
 }
