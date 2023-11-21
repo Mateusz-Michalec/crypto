@@ -70,7 +70,7 @@ export default function NavbarComp() {
               <span>Kryptowaluty</span>
             </Nav.Link>
 
-            <Nav.Link
+            {/* <Nav.Link
               onClick={() => setExpanded(false)}
               as={Link}
               to="/news"
@@ -78,7 +78,7 @@ export default function NavbarComp() {
             >
               <i className="bi bi-cursor me-3" />
               <span>Newsy</span>
-            </Nav.Link>
+            </Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
